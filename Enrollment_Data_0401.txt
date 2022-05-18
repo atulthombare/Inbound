@@ -1,0 +1,72 @@
+Files /home/axway/FMSOURCE/flowmanager/.git/config and /opt/Axway/FM/docker-flowmanager/.git/config differ
+Files /home/axway/FMSOURCE/flowmanager/.git/index and /opt/Axway/FM/docker-flowmanager/.git/index differ
+Files /home/axway/FMSOURCE/flowmanager/.git/logs/HEAD and /opt/Axway/FM/docker-flowmanager/.git/logs/HEAD differ
+Files /home/axway/FMSOURCE/flowmanager/.git/logs/refs/heads/master and /opt/Axway/FM/docker-flowmanager/.git/logs/refs/heads/master differ
+Files /home/axway/FMSOURCE/flowmanager/.git/logs/refs/remotes/origin/HEAD and /opt/Axway/FM/docker-flowmanager/.git/logs/refs/remotes/origin/HEAD differ
+Files /home/axway/FMSOURCE/flowmanager/.git/packed-refs and /opt/Axway/FM/docker-flowmanager/.git/packed-refs differ
+Files /home/axway/FMSOURCE/flowmanager/.git/refs/heads/master and /opt/Axway/FM/docker-flowmanager/.git/refs/heads/master differ
+Files /home/axway/FMSOURCE/flowmanager/docker-compose/docker-compose.yml and /opt/Axway/FM/docker-flowmanager/docker-compose/docker-compose.yml differ
+Files /home/axway/FMSOURCE/flowmanager/docker-compose/env.template and /opt/Axway/FM/docker-flowmanager/docker-compose/env.template differ
+Files /home/axway/FMSOURCE/flowmanager/docs/README.md and /opt/Axway/FM/docker-flowmanager/docs/README.md differ
+
+
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/README.md and /opt/Axway/FM/docker-flowmanager/kubernetes/README.md differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/flowmanager_helper.sh and /opt/Axway/FM/docker-flowmanager/kubernetes/flowmanager_helper.sh differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/README.md and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/README.md differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager.yaml and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/flowmanager.yaml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager/Chart.yaml and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/flowmanager/Chart.yaml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager/README.md and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/flowmanager/README.md differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager/values.yaml and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/flowmanager/values.yaml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/helper_functions/flowmanger_functions.sh and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/helper_functions/flowmanger_functions.sh differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/helper_functions/gen_secrets.sh and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/helper_functions/gen_secrets.sh differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/helm/helper_functions/helm_functions.sh and /opt/Axway/FM/docker-flowmanager/kubernetes/helm/helper_functions/helm_functions.sh differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/README.md and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/README.md differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base/deployment.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/base/deployment.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base/kustomization.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/base/kustomization.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base/role.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/base/role.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base/service.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/base/service.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/multinode/ingress.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/multinode/ingress.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/multinode/patch.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/multinode/patch.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/singlenode/ingress.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/singlenode/ingress.yml differ
+Files /home/axway/FMSOURCE/flowmanager/kubernetes/standard/singlenode/patch.yml and /opt/Axway/FM/docker-flowmanager/kubernetes/standard/singlenode/patch.yml differ
+Files /home/axway/FMSOURCE/flowmanager/podman/flowmanager.yml and /opt/Axway/FM/docker-flowmanager/podman/flowmanager.yml differ
+Files /home/axway/FMSOURCE/flowmanager/podman/flowmanager_helper.sh and /opt/Axway/FM/docker-flowmanager/podman/flowmanager_helper.sh differ
+
+Only in /home/axway/FMSOURCE/flowmanager/.git/objects/pack: pack-743d96a3375720148a46730e0546fbce87df7cb7.idx
+Only in /home/axway/FMSOURCE/flowmanager/.git/objects/pack: pack-743d96a3375720148a46730e0546fbce87df7cb7.pack
+Only in /home/axway/FMSOURCE/flowmanager/: .gitattributes
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager: .helmignore
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager: custom-charts
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/helm/flowmanager: requirements.yaml
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base: config-map.yaml
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base: deployment-st.yml
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base: secret-env-st.yml
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes/standard/base: service-st.yml
+Only in /home/axway/FMSOURCE/flowmanager/kubernetes: dbs
+Only in /home/axway/FMSOURCE/flowmanager/podman/files/flowmanager: initialize
+Only in /home/axway/FMSOURCE/flowmanager/podman/files/flowmanager: logs
+Only in /home/axway/FMSOURCE/flowmanager/podman/files: st-fm-plugin
+Only in /opt/Axway/FM/docker-flowmanager/.git/objects/pack: pack-a1b38d1429ea098c58d6a6d4e594339f21409063.idx
+Only in /opt/Axway/FM/docker-flowmanager/.git/objects/pack: pack-a1b38d1429ea098c58d6a6d4e594339f21409063.pack
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/configs: FMuicert.p12
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/configs: MFT4_GOVERNANCECA.key
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/configs: MFT4_GOVERNANCECA.p12
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/configs: demo.axway.com_fullchain.p12
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/license: license.xml
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/flowmanager/logs: logs
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: MFT4_GOVERNANCECA.pem
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: private-key
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: public-key
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: st-fm-plugin-ca.pem
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: st-fm-plugin-cert-key.pem
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: st-fm-plugin-cert.pem
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose/files/st-fm-plugin: st-fm-plugin-shared-secret
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose: .env
+Only in /opt/Axway/FM/docker-flowmanager/docker-compose: .env.swp
+Only in /opt/Axway/FM/docker-flowmanager/kubernetes/helm/flowmanager: templates
+Only in /opt/Axway/FM/docker-flowmanager/kubernetes/helm: mongodb.yaml
+Only in /opt/Axway/FM/docker-flowmanager/kubernetes/helm: redis.yaml
+Only in /opt/Axway/FM/docker-flowmanager/kubernetes: base
+Only in /opt/Axway/FM/docker-flowmanager/kubernetes: helper.sh
+Only in /opt/Axway/FM/docker-flowmanager/scripts: custom-ca
+[axway@mft-env docker-flowmanager]$ diff -qr /home/axway/FMSOURCE/flowmanager/ /opt/Axway/FM/docker-flowmanager/

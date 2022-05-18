@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- This is a sample file for SSO configuration for Admin component. -->
+<SSOConfiguration>
+ 
+    <CertificateValidation
+            trustStoreInitializer="com.axway.st.server.sso.impl.TrustStoreInitializer"
+            pathValidation="false"
+            enableRevocation="false"> 
+    </CertificateValidation>
+ 
+    <ServiceProvider
+            entityId="redacted"
+            filteredUri="/*"
+            logoutUri="/logout"
+            logoutRedirectUri="/coreadmin"
+            keystoreInitializer="com.axway.st.server.sso.impl.KeyStoreInitializer"
+            keyAlias="ssokey"
+            sessionIdCookieName="STAdminSsoCookie"
+            useAppSessions="false"
+            >
+ 
+        <!-- Specifies an entry points for receiving SAML Assertions from the Identity Provider. The below tags are recommended. -->
+        <AssertionConsumerService binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" location="/saml2/sso/post/j_security_check"/>
+        <AssertionConsumerService binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" location="/saml2/sso/redirect/j_security_check"/>
+        <AssertionConsumerService binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-PAOS" location="/saml2/sso/paos/j_security_check"/>
+        <SingleLogoutService binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" location="/saml2/slo/post/j_security_check"/>
+        <SingleLogoutService binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" location="/saml2/slo/redirect/j_security_check"/>
+ 
+        <!-- Features tag is optional - Here are the default values -->
+        <Features>
+ 
+            <!-- Configures the session cookie whether to be set with Secure flag. Recommended value: true. -->
+            <Feature key="secure-cookie" value="true" />
+ 
+            <!-- 
+                 Type of unique identifier generator to use to assign ids to SAML messages. 
+                 The value must be com.axway.st.server.sso.impl.UIDGenerator
+            -->
+            <Feature key="uid-generator" value="com.axway.st.server.sso.impl.UIDGenerator" /> 
+        </Features>
+ 
+    </ServiceProvider>
+ 
+    <!-- Identity provider definitions. Configures various aspects of interaction with identity providers. -->
+    <IdentityProviders>
+ 
+        <SamlIdentityProvider
+                entityId="redacted"
+                metadataUrl="./IDPmetadata.xml"
+                verifyAssertionExpiration="false"
+                format="urn:oasis:names:tc:SAML:2.0:nameid-format:entity"
+                sign="true">
+ 
+            <!-- Mappings tag is optional -->
+            <Mappings>
+                <!-- NOTE: SecureTransport does not support the attribute mapping for Admin component. -->
+            </Mappings>
+ 
+            <!-- Features control specific behavior of SAML message processing. -->
+            <Features>
+                <!-- Allows interaction with the IdP by plain HTTP. Default: false. -->
+                <Feature key="saml-allow-http-connection" value="false"/>
+ 
+                <!-- Allows unsigned assertions in messages received from the Identity Provider. Default: false. -->
+                <Feature key="saml-allow-unsigned-assertion" value="true"/>
+ 
+                <!-- 
+                    Enable or disable the signature verification of the metadata file and the certification 
+                    path of the certificate used to sign. Set to false if metadata file is not signed. 
+                    Default: true.
+                -->
+                <Feature key="saml-verify-metadata-signature" value="false"/>
+ 
+                <!-- 
+                    Enable or disable signing of Authentication Request messages. Presence of this feature and its 
+                    value overrides the meaning of sign attribute of IdentityProvider element above.
+                -->
+                <Feature key="saml-sign-authnrequest" value="false"/>
+ 
+                <!-- 
+                    Enable or disable signing of Logout Request messages. Presence of this feature and its value 
+                    overrides the meaning of sign attribute of IdentityProvider element above.
+                 -->
+                <Feature key="saml-sign-logoutrequest" value="true"/>
+ 
+                <!-- 
+                    Enable or disable signing of Logout Response messages. Presence of this feature and its value 
+                    overrides the meaning of sign attribute of IdentityProvider element above.
+                -->
+                <Feature key="saml-sign-logoutresponse" value="true"/>
+ 
+            </Features>
+        </SamlIdentityProvider>      
+    </IdentityProviders>
+</SSOConfiguration>
